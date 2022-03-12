@@ -14,11 +14,15 @@ class MainActivity : AppCompatActivity() {
 //        then the collapsed view continues to scroll down
 //        setContentView(R.layout.activity_main)
 
-//        scroll|enterAlwaysCollapsed -
+//        scroll|enterAlwaysCollapsed - When we scroll up the view is visible and when we scroll down
+//        the collapsed view continues to scroll down just like any other scrollview which means the
+//        collapsed view (text view)scrolls down first completely then only the appbar expands.
 //        setContentView(R.layout.activity_layout1)
 
-//        scroll|snap
-        setContentView(R.layout.activity_layout2)
+//        scroll|snap - Unlike others it scrolls based on the visibility of the view meaning while
+//        scrolling if the visibility of the view(toolbar) is more than 50% then the view will show
+//        itself and if it is less than 50% the view will hide.
+//        setContentView(R.layout.activity_layout2)
 
 //        scroll|exitUntilCollapsed - When we scroll up the view(toolbar) contracts and sticks at the
 //        top  and when we scroll down the  collapsed view i.e textview is displayed first and only after
